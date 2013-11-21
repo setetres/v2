@@ -39,10 +39,10 @@
         <meta itemprop="image" content=""/>
         <meta itemprop="url" content=""/>
 
-        <meta name="twitter:card" content="" />
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:description" content="" />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:card" content=""/>
+        <meta name="twitter:title" content=""/>
+        <meta name="twitter:description" content=""/>
+        <meta name="twitter:image" content=""/>
 
         <link rel="icon" href="favicon.ico"/>
         <link rel="stylesheet" href="css/normalize.css">
