@@ -1,0 +1,29 @@
+/* 15 columns */
+
+@media (min-width: 1250px) {
+    .center {width: 1180px;}
+}
+
+/* 12 columns */
+
+@media all and (min-width: 1000px) and (max-width: 1249px) {
+    .center {width: 940px;}
+}
+
+/* 9 columns */
+
+@media (min-width: 770px) and (max-width: 999px) {
+    .center {width: 700px;}
+}
+
+/* 6 columns */
+
+@media (min-width: 480px) and (max-width: 769px) {
+    .center {width: 460px;}
+}
+
+/* 4 columns */
+
+@media (max-width: 479px) {
+    .center {width: 300px;}
+}
