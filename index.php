@@ -39,6 +39,11 @@
         <meta itemprop="image" content=""/>
         <meta itemprop="url" content=""/>
 
+        <meta name="twitter:card" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+
         <link rel="icon" href="favicon.ico"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css"/>
@@ -65,22 +70,17 @@
                 <div class="center">
                     <div class="media-crop">
                         <div class="crop">
-                            <img src="http://placekitten.com/200/300">
-                        </div>
-                    </div>
-                    <div class="media-crop custom">
-                        <div class="crop">
-                            <img src="http://placekitten.com/200/300">
+                            <img src="http://placekitten.com/400/200">
                         </div>
                     </div>
                     <div class="media-crop square">
                         <div class="crop">
-                            <img src="http://placekitten.com/200/300">
+                            <img src="http://placekitten.com/200/200">
                         </div>
                     </div>
                     <div class="media-crop circle">
                         <div class="crop">
-                            <img src="http://placekitten.com/200/300">
+                            <img src="http://placekitten.com/200/200">
                         </div>
                     </div>
                 </div>
