@@ -1,6 +1,30 @@
-<?php
+﻿<?
     error_reporting(E_ALL ^ E_NOTICE);
-    ini_set('display_errors', FALSE);
+    ini_set('display_errors', TRUE);
+
+    $status = $_SERVER['REDIRECT_STATUS'];
+    $codes = array(
+        400 => array('401 Unauthorized', ''),
+        401 => array('402 Payment Required', ''),
+        403 => array('403 Forbidden', ''),
+        404 => array('404 Not Found', ''),
+        405 => array('405 Method Not Allowed', ''),
+        406 => array('406 Not Acceptable', ''),
+        408 => array('408 Request Timeout', ''),
+        409 => array('409 Conflict', ''),
+        413 => array('413 Request Entity Too Large', ''),
+        414 => array('414 Request-URI Too Large', ''),
+        500 => array('500 Internal Server Error', ''),
+        500 => array('501 Not Implemented', ''),
+        502 => array('502 Bad Gateway', ''),
+        504 => array('504 Gateway Timeout', ''),
+    );
+
+    $title = $codes[$status][0];
+    $message = $codes[$status][1];
+    if ($title == false || strlen($status) != 3) {
+        $message = 'Please supply a valid status code.';
+    }
 ?>
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org">
@@ -9,12 +33,18 @@
         <meta name="author" content="Sete Três - http://setetres.st"/>
         <meta name="keywords" content=""/>
 
-        <title>Please upgrade to a modern browser</title>
-        <meta name="description" content="Your browser is no longer supported. Please upgrade to a modern browser."/>
+        <title><?=$title?></title>
+        <meta name="description" content=""/>
         <link rel="canonical" href=""/>
 
-        <meta itemprop="name" content="Please upgrade to a modern browser"/>
-        <meta itemprop="description" content="Your browser is no longer supported. Please upgrade to a modern browser."/>
+        <meta property="og:type" content=""/>
+        <meta property="og:title" content="<?=$title?>"/>
+        <meta property="og:description" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:url" content=""/>
+
+        <meta itemprop="name" content="<?=$title?>"/>
+        <meta itemprop="description" content=""/>
         <meta itemprop="image" content=""/>
         <meta itemprop="url" content=""/>
 
@@ -29,15 +59,7 @@
         <div id="wr">
             <header>
                 <div class="center">
-                    <h1 class="logo">Please upgrade to a modern browser</h1>
-                    <nav role="navigation">
-                        <ul>
-                            <li title="Chrome"><a href="http://google.com/chrome" rel="external">Chrome</a></li>
-                            <li title="Internet Explorer"><a href="http://internetexplorer9.com" rel="external">Internet Explorer</a></li>
-                            <li title="Firefox"><a href="http://mozilla.com/firefox" rel="external">Firefox</a></li>
-                            <li title="Safari"><a href="http://apple.com/safari" rel="external">Safari</a></li>
-                        </ul>
-                    </nav>
+                    <h1 class="logo"><?=$title?></h1>
                 </div>
             </header>
             <div id="main" role="main" class="wr">

@@ -1,12 +1,12 @@
-ErrorDocument 400 /get/error.php
-ErrorDocument 401 /get/error.php
-ErrorDocument 403 /get/error.php
-ErrorDocument 404 /get/error.php
-ErrorDocument 405 /get/error.php
-ErrorDocument 406 /get/error.php
-ErrorDocument 409 /get/error.php
-ErrorDocument 413 /get/error.php
-ErrorDocument 414 /get/error.php
-ErrorDocument 500 /get/error.php
-ErrorDocument 501 /get/error.php
+ErrorDocument 400 /get
+ErrorDocument 401 /get
+ErrorDocument 403 /get
+ErrorDocument 404 /get
+ErrorDocument 405 /get
+ErrorDocument 406 /get
+ErrorDocument 409 /get
+ErrorDocument 413 /get
+ErrorDocument 414 /get
+ErrorDocument 500 /get
+ErrorDocument 501 /get
 Options -Indexes
