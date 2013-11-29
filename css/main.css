@@ -76,6 +76,12 @@ body {
     overflow-x: hidden;
 }
 
+/* fitvids */
+
+.fit-video {
+    width: 100%;
+}
+
 /* image-crop */
 
 .media-crop {

@@ -1,17 +1,6 @@
 <?php
     error_reporting(E_ALL ^ E_NOTICE);
     ini_set('display_errors', FALSE);
-
-    $uas = explode(';',$_SERVER['HTTP_USER_AGENT']);
-    $enable = 9;
-
-    foreach($uas as $ua) {
-        $ievs = strstr($ua, 'MSIE') ? floatval(substr($ua, 5,strlen($ua))) : NULL;
-    }
-
-    if(!is_null($ievs) && $ievs < $enable) {
-        header("Location: /get");
-    }
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -82,6 +71,9 @@
                         <div class="crop">
                             <img src="http://placekitten.com/200/200">
                         </div>
+                    </div>
+                    <div class="fit-video">
+                        <iframe width="425" height="240" src="http://www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
