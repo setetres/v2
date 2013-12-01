@@ -1,6 +1,6 @@
 // 1 - easing 1.3 _ http://gsgd.co.uk/sandbox/jquery/easing
 // 2 - fitvids 1.0.3  _ http://fitvidsjs.com
-// 3 - fullscreenBg 1.4 (mod) _ http://github.com/Gaya/Fullscreen-Background-jQuery-plugin & http://setetres.st
+// 3 - fullscreenbg 1.4 (mod) _ http://github.com/Gaya/Fullscreen-Background-jQuery-plugin & http://setetres.st
 
 // 1 - easing 1.3 _ http://gsgd.co.uk/sandbox/jquery/easing
 
