@@ -13,7 +13,7 @@ Plugins
 
 Starter use this:
 
-* [Normalize.css] - A modern, HTML5-ready alternative to CSS resets
+* [Normalize.css] - A modern, HTML5-ready alternative to CSS resets.
 * [jQuery] - A fast, small, and feature-rich JavaScript library.
 * [jQuery Easing] - A jQuery plugin to give advanced easing options.
 * [FitVids] - A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
@@ -48,9 +48,6 @@ License
 -------
 
 Starter is licensed under a [Creative Commons Attribution 3.0 License].
-
-☺
-==
 
 [Normalize.css]: http://github.com/necolas/normalize.css
 [jQuery]: http://jquery.com
