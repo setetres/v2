@@ -47,7 +47,7 @@ index.php
 License
 -------
 
-Starter is licensed under a [Creative Commons Attribution 3.0 License].
+Starter is under a [Creative Commons Attribution 3.0 License].
 
 [Normalize.css]: http://github.com/necolas/normalize.css
 [jQuery]: http://github.com/jquery/jquery
