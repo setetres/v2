@@ -50,9 +50,9 @@ License
 Starter is licensed under a [Creative Commons Attribution 3.0 License].
 
 [Normalize.css]: http://github.com/necolas/normalize.css
-[jQuery]: http://jquery.com
-[jQuery Easing]: http://gsgd.co.uk/sandbox/jquery/easing
-[FitVids]: http://fitvidsjs.com
+[jQuery]: http://github.com/jquery/jquery
+[jQuery Easing]: http://github.com/gdsmith/jquery.easing
+[FitVids]: http://github.com/davatron5000/FitVids.js
 [FullScreenBg]: http://github.com/Gaya/Fullscreen-Background-jQuery-plugin
-[Modernizr]: http://modernizr.com/download/#-fontface-backgroundsize-borderimage-borderradius-boxshadow-flexbox-hsla-multiplebgs-opacity-rgba-textshadow-cssanimations-csscolumns-generatedcontent-cssgradients-cssreflections-csstransforms-csstransforms3d-csstransitions-applicationcache-canvas-canvastext-draganddrop-hashchange-history-audio-video-indexeddb-input-inputtypes-localstorage-postmessage-sessionstorage-websockets-websqldatabase-webworkers-geolocation-inlinesvg-smil-svg-svgclippaths-touch-webgl-shiv-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-hasevent-prefixes-domprefixes-load
+[Modernizr]: http://github.com/Modernizr/Modernizr
 [Creative Commons Attribution 3.0 License]: http://creativecommons.org/licenses/by/3.0
