@@ -39,7 +39,7 @@ Structure
 .gitignore
 .htaccess
 README.md
-.error.php
+error.php
 favicon.ico
 index.php
 ```
