@@ -3,7 +3,7 @@ Starter
 
 A quick-start responsive framework for front-end development.
 
-![Starter](http>//file.setetres.st/img/starter-header.gif)
+![Starter](http://file.setetres.st/img/starter-header.gif?raw=true)
 
 Version
 -------
