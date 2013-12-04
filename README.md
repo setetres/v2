@@ -31,7 +31,7 @@ Structure
 │   │    ├── main.css
 │   │    ├── main-responsive.css
 │   │    └── normalize.css
-│   └── img
+│   ├── img
 │   │    └── loading.gif
 │   └── js
 │        ├── functions.js
