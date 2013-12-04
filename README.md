@@ -27,7 +27,7 @@ Structure
 
 ```
 ├── starter
-│   └── css
+│   ├── css
 │   │    ├── main.css
 │   │    ├── main-responsive.css
 │   │    └── normalize.css
