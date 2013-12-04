@@ -26,24 +26,25 @@ Structure
 ---------
 
 ```
-/css
-    - main.css
-    - main-responsive.css
-    - normalize.css
-/img
-    - loading.gif
-/js
-    - functions.js
-    - grid.js
-    - jquery.js
-    - modernizr.js
-    - plugins.js
-.gitignore
-.htaccess
-README.md
-error.php
-favicon.ico
-index.php
+├── starter
+│   └── css
+│   │    ├── main.css
+│   │    ├── main-responsive.css
+│   │    └── normalize.css
+│   └── img
+│   │    └── loading.gif
+│   └── js
+│        ├── functions.js
+│        ├── grid.js
+│        ├── jquery.js
+│        ├── modernizr.js
+│        └── plugins.js
+├── .gitignore
+├── .htaccess
+├── README.md
+├── error.php
+├── favicon.ico
+└── index.php
 ```
 
 License
