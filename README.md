@@ -28,17 +28,17 @@ Structure
 ```
 ├── starter
 │   ├── css
-│   │    ├── main.css
-│   │    ├── main-responsive.css
-│   │    └── normalize.css
+│   │   ├── main.css
+│   │   ├── main-responsive.css
+│   │   └── normalize.css
 │   ├── img
-│   │    └── loading.gif
+│   │   └── loading.gif
 │   └── js
-│        ├── functions.js
-│        ├── grid.js
-│        ├── jquery.js
-│        ├── modernizr.js
-│        └── plugins.js
+│       ├── functions.js
+│       ├── grid.js
+│       ├── jquery.js
+│       ├── modernizr.js
+│       └── plugins.js
 ├── .gitignore
 ├── .htaccess
 ├── README.md
