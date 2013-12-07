@@ -28,23 +28,28 @@ Structure
 ```
 ├── starter
 │   ├── css
-│   │   ├── main.css
+│   │   ├── main.css            (basic css configuration)
 │   │   ├── main-responsive.css
-│   │   └── normalize.css
+│   │   │   ├── 4col            (mobile - portrait view)
+│   │   │   ├── 6col            (mobile - landscape view)
+│   │   │   ├── 9col            (for devices with 800 wide)
+│   │   │   ├── 12col           (for devices with 1024 wide)
+│   │   │   └── 15col           (for devices with 1280+ wide)
+│   │   └── normalize.css       (aplha male of css resets)
 │   ├── img
-│   │   └── loading.gif
+│   │   └── loading.gif         (fake 'loading' background)
 │   └── js
-│       ├── functions.js
-│       ├── grid.js
-│       ├── jquery.js
-│       ├── modernizr.js
-│       └── plugins.js
+│       ├── functions.js        (for your functions and shit)
+│       ├── grid.js             (the visual guide for your layout)
+│       ├── jquery.js           (jquery library)
+│       ├── modernizr.js        (html5 + css3 for the masses)
+│       └── plugins.js          (you can add more plugins here)
 ├── .gitignore
-├── .htaccess
-├── README.md
-├── error.php
-├── favicon.ico
-└── index.php
+├── .htaccess                   (handle server errors and shit)
+├── README.md                   (you're reading it right now)
+├── error.php                   (one page to rule them all)
+├── favicon.ico                 (16x16 of pure art)
+└── index.php                   (duh!)
 ```
 
 License
