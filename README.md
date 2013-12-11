@@ -45,9 +45,7 @@ Structure
 │       ├── modernizr.js        (html5 + css3 for the masses)
 │       └── plugins.js          (you can add more plugins here)
 ├── .gitignore
-├── .htaccess                   (handle server errors and shit)
 ├── README.md                   (you're reading it right now)
-├── error.php                   (one page to rule them all)
 ├── favicon.ico                 (16x16 of pure art)
 └── index.php                   (duh!)
 ```
