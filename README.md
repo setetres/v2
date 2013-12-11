@@ -47,7 +47,7 @@ Structure
 ├── .gitignore
 ├── README.md                   (you're reading it right now)
 ├── favicon.ico                 (16x16 of pure art)
-└── index.html                   (duh!)
+└── index.html                  (duh!)
 ```
 
 License
