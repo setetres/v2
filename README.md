@@ -26,8 +26,8 @@ Structure
 ---------
 
 ```
-├── starter
-│   ├── css
+├── starter/
+│   ├── css/
 │   │   ├── main.css            (basic css configuration)
 │   │   ├── main-responsive.css
 │   │   │   ├── 4col            (mobile - portrait view)
@@ -36,9 +36,9 @@ Structure
 │   │   │   ├── 12col           (for devices with 1024 wide)
 │   │   │   └── 15col           (for devices with 1280+ wide)
 │   │   └── normalize.css       (aplha male of css resets)
-│   ├── img
+│   ├── img/
 │   │   └── loading.gif         (fake 'loading' background)
-│   └── js
+│   └── js/
 │       ├── functions.js        (for your functions and shit)
 │       ├── grid.js             (the visual guide for your layout)
 │       ├── jquery.js           (jquery library)
