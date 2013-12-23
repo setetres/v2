@@ -68,6 +68,17 @@
                             <img src="http://placekitten.com/220/220">
                         </div>
                     </div>
+                    <div class="share">
+                        <div class="fb">
+                            <div class="fb-like" data-href="http://google.com.br" data-send="false" data-layout="button_count" data-width="65" data-show-faces="false"></div>
+                        </div>
+                        <div class="tw">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="eusoubh" data-lang="en" data-text="">Tweet</a>
+                        </div>
+                        <div class="gp">
+                            <div class="g-plusone" data-size="medium" data-href="http://google.com.br"></div>
+                        </div>
+                    </div>
                     <div class="fit-video">
                         <iframe width="425" height="240" src="http://www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -84,6 +95,36 @@
         <script src="js/functions.js"></script>
         <script src="js/grid.js"></script>
         <script>
+
+            // facebook
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=155658704635453";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            // twiiter
+
+            !function(d,s,id){
+                var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                if(!d.getElementById(id)){
+                js=d.createElement(s); js.id=id;
+                js.src=p+'://platform.twitter.com/widgets.js';
+                fjs.parentNode.insertBefore(js,fjs);
+            }}(document, 'script', 'twitter-wjs');
+
+
+            // google plus
+
+            window.___gcfg = {lang: 'en-US'};
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
 
             // analytics
 
