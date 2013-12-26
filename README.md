@@ -1,7 +1,7 @@
 Starter
 =======
 
-A quick-start responsive framework for front-end development.
+A quick-start responsive framework for frontend development.
 
 ![Starter](http://file.setetres.st/img/starter-header.gif?v=1.2&raw=true)
 
