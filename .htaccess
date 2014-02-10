@@ -1,12 +1,12 @@
-ErrorDocument 400 /index.php
-ErrorDocument 401 /index.php
-ErrorDocument 403 /index.php
-ErrorDocument 404 /index.php
-ErrorDocument 405 /index.php
-ErrorDocument 406 /index.php
-ErrorDocument 409 /index.php
-ErrorDocument 413 /index.php
-ErrorDocument 414 /index.php
-ErrorDocument 500 /index.php
-ErrorDocument 501 /index.php
+ErrorDocument 400 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 405 /index.html
+ErrorDocument 406 /index.html
+ErrorDocument 409 /index.html
+ErrorDocument 413 /index.html
+ErrorDocument 414 /index.html
+ErrorDocument 500 /index.html
+ErrorDocument 501 /index.html
 Options -Indexes
