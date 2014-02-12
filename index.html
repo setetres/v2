@@ -37,20 +37,15 @@
         <script src="js/modernizr.js"></script>
     </head>
     <body>
-        <div class="loading">
-            <i>*</i>
-            <div class="ribbon">
-                <strong class="ribbon-content">
-                    <h1>Please wait</h1>
-                </strong>
-            </div>
-        </div>
         <div id="wr" class="wr">
             <header>
-                <div id="box" class="box zoomIn">
+                <div id="box" class="box">
                     <div class="shape"></div>
+                    <div class="loading">
+                        <i>*</i>
+                    </div>
                     <div class="number">
-                        <h1><span>7</span><span>3</span></h1>
+                        <h1 class="timer" data-to="73" data-speed="730"></h1>
                     </div>
                     <nav role="navigation">
                         <ul id="nav">
@@ -84,55 +79,65 @@
             </header>
             <div id="main" role="main" class="main">
                 <section id="about" class="about">
-                    <div class="c1">
-                        <h2>Guilherme<br/>Pangnotta</h2>
-                        <h3>&para; Current</h3>
-                        <p><strong>Frontend Developer</strong> @ <a href="http://jchebly.com.br" rel="external">JCHEBLY</a></p>
-                        <h3>&para; Past</h3>
+                    <div id="scroller">
                         <ul>
-                            <li><strong>AgênciaClick Isobar</strong> <i>June 2009 – August 2010</i></li>
-                            <li><strong>Sense8</strong> <i>September 2008 – May 2009</i></li>
-                            <li><strong>HouseID</strong> <i>September 2007 – May 2008</i></li>
+                            <li>
+                                <div class="c1">
+                                    <div class="padding">
+                                        <h2 class="name">Guilherme<br/>Pangnotta</h2>
+                                        <h3>&para; Current</h3>
+                                        <p><strong>Frontend Developer</strong> @ <a href="http://jchebly.com.br" rel="external">JCHEBLY</a></p>
+                                        <h3>&para; Past</h3>
+                                        <ul>
+                                            <li><strong>AgênciaClick Isobar</strong> <i>June 2009 – August 2010</i></li>
+                                            <li><strong>Sense8</strong> <i>September 2008 – May 2009</i></li>
+                                            <li><strong>HouseID</strong> <i>September 2007 – May 2008</i></li>
+                                        </ul>
+                                        <h3>&para; Education</h3>
+                                        <p><strong>Advertising</strong> @ <a href="http://newtonpaiva.br" rel="external">Newton</a></p>
+                                        <h3>&para; Awards</h3>
+                                        <ul>
+                                            <li><strong>Awwwards</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
+                                            <li><strong>CSS Awards</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
+                                            <li><strong>Design Taxi</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
+                                            <li><strong>The FWA</strong> _ Sete Três v1<br/><i>Public Shortlist</i></li>
+                                            <li><strong>Popai Brasil 2013</strong> _ Citibank Totem<br/><i>Gold on Digital Signage</i> via <a href="http://jchebly.com.br" rel="external">JCHEBLY</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="c2">
+                                    <div class="padding">
+                                        <h3>&para; Personal Projects</h3>
+                                        <ul>
+                                            <li><a href="http://inkstarter.cc" rel="external">InkStarter.cc</a> <i>You draw. You vote. I tattoo myself!</i></li>
+                                            <li><a href="http://1997.setetres.st" rel="external">1997</a> <i>Feeling responsively nostalgic?</i></li>
+                                            <li><a href="http://v1.setetres.st" rel="external">v1</a> <i>Award winning v1.0 of my website.</i></li>
+                                            <li><a href="http://go.setetres.st/starter" rel="external">Starter</a> <i>A quick-start responsive framework for frontend development.</i></li>
+                                            <li><a href="http://puta.nu" rel="external">PUTA.nu</a> <i>Porn Under Traditional Arts <sup>Soon</sup></i></li>
+                                        </ul>
+                                        <h3>&para; Recent Projects</h3>
+                                        <ul>
+                                            <li><a href="http://newtonpaiva.br" rel="external">Newton</a> <i>HTML + CSS + JS</i></li>
+                                            <li><a href="http://belo2014.com.br" rel="external">Belo 2014</a> <i>HTML + CSS + JS</i></li>
+                                            <li><a href="http://jchebly.com.br" rel="external">JCHEBLY</a> <i>HTML + CSS + JS</i></li>
+                                            <li><a href="http://superliga.jchebly.com.br" rel="external">Superliga JCHEBLY</a> <i>HTML + CSS + JS</i></li>
+                                            <li><a href="http://dmsports.co" rel="external">DM Sports</a> <i>HTML + CSS + JS + Wordpress</i></li>
+                                            <li><a href="http://dsmais.com.br" rel="external">DS+</a> <i>HTML + CSS + JS + Wordpress</i></li>
+                                        </ul>
+                                        <h2>Šetetres.st ᴖ since 2●●8</h2>
+                                        <div class="x">
+                                            <i class="x-s">Š</i>
+                                            <i class="x-t">T</i>
+                                            <i class="x-7">7</i>
+                                            <i class="x-3">3</i>
+                                            <i class="l-1"></i>
+                                            <i class="l-2"></i>
+                                        </div>
+                                        <p>Built with <a href="http://go.setetres.st/starter" rel="external">Starter</a> / Under a <a href="http://creativecommons.org/licenses/by/4.0" rel="external">Creative Commons Attribution License</a></p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <h3>&para; Education</h3>
-                        <p><strong>Advertising</strong> @ <a href="http://newtonpaiva.br" rel="external">Newton</a></p>
-                        <h3>&para; Awards</h3>
-                        <ul>
-                            <li><strong>Awwwards</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
-                            <li><strong>CSS Awards</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
-                            <li><strong>Design Taxi</strong> _ Sete Três v1<br/><i>Site of the Day</i></li>
-                            <li><strong>The FWA</strong> _ Sete Três v1<br/><i>Public Shortlist</i></li>
-                            <li><strong>Popai Brasil 2013</strong> _ Citibank Totem<br/><i>Gold on Digital Signage</i> via <a href="http://jchebly.com.br" rel="external">JCHEBLY</a></li>
-                        </ul>
-                    </div>
-                    <div class="c2">
-                        <h3>&para; Personal Projects</h3>
-                        <ul>
-                            <li><a href="http://inkstarter.cc" rel="external">InkStarter.cc</a> <i>You draw. You vote. I tattoo myself!</i></li>
-                            <li><a href="http://1997.setetres.st" rel="external">1997</a> <i>Feeling responsively nostalgic?</i></li>
-                            <li><a href="http://v1.setetres.st" rel="external">v1</a> <i>Award winning v1.0 of my website.</i></li>
-                            <li><a href="http://go.setetres.st/starter" rel="external">Starter</a> <i>A quick-start responsive framework for frontend development.</i></li>
-                            <li><a href="http://puta.nu" rel="external">PUTA.nu</a> <i>Porn Under Traditional Arts <sup>Soon</sup></i></li>
-                        </ul>
-                        <h3>&para; Recent Projects</h3>
-                        <ul>
-                            <li><a href="http://newtonpaiva.br" rel="external">Newton</a> <i>HTML + CSS + JS</i></li>
-                            <li><a href="http://belo2014.com.br" rel="external">Belo 2014</a> <i>HTML + CSS + JS</i></li>
-                            <li><a href="http://jchebly.com.br" rel="external">JCHEBLY</a> <i>HTML + CSS + JS</i></li>
-                            <li><a href="http://superliga.jchebly.com.br" rel="external">Superliga JCHEBLY</a> <i>HTML + CSS + JS</i></li>
-                            <li><a href="http://dmsports.co" rel="external">DM Sports</a> <i>HTML + CSS + JS + Wordpress</i></li>
-                            <li><a href="http://dsmais.com.br" rel="external">DS+</a> <i>HTML + CSS + JS + Wordpress</i></li>
-                        </ul>
-                        <h2>Šetetres.st ᴖ since 2●●8</h2>
-                        <div class="x">
-                            <i class="x-s">Š</i>
-                            <i class="x-t">T</i>
-                            <i class="x-7">7</i>
-                            <i class="x-3">3</i>
-                            <i class="l-1"></i>
-                            <i class="l-2"></i>
-                        </div>
-                        <p>Built with <a href="http://go.setetres.st/starter" rel="external">Starter</a> / Under a <a href="http://creativecommons.org/licenses/by/4.0" rel="external">Creative Commons Attribution License</a></p>
                     </div>
                 </section>
                 <section id="social" class="social">

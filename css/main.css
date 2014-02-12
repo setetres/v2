@@ -15,16 +15,17 @@ a:hover, a:active, a:focus, input:hover, input:active, input:focus {
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
-    cursor: default;
 }
 
 .pattern,
 .about,
+.about .padding,
 .about a,
 .box,
 .box ul,
 .box ul li a,
 .box .shape,
+.box .number,
 .social,
 .social ul li a,
 footer,
@@ -93,7 +94,6 @@ h1,
 body,
 .about h2,
 .about p,
-.ribbon h1,
 .box ul li a span,
 footer {
     font-family: 'Courier New';
@@ -116,6 +116,10 @@ footer {
 .box .number span::-moz-selection, .about h2::-moz-selection, a::-moz-selection {background: #f2f2f2; color: #000100;}
 .box .number span::selection, .about h2::selection, a::selection {background: #f2f2f2; color: #000100;}
 
+html {
+    -ms-touch-action: none;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -123,6 +127,7 @@ html, body {
 }
 
 body {
+    cursor: default;
     position: relative;
     background: #f2f2f2;
     color: #000100;
@@ -130,18 +135,11 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-/* loading */
-
-.loading {
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 73;
-    overflow: hidden;
+a {
+    cursor: default;
 }
+
+/* loading */
 
 .loading i {
     position: absolute;
@@ -157,75 +155,6 @@ body {
     margin-left: -200px;
     text-align: center;
     opacity: 0.73;
-}
-
-.ribbon {
-   width: 226px;
-   position: absolute;
-   text-align: center;
-   font-size: 20px;
-   background: #e32e21;
-   -webkit-box-shadow: rgba(000,000,000,0.3) 0 0px 0px;
-   -moz-box-shadow: rgba(000,000,000,0.3) 0 0px 0px;
-   box-shadow: rgba(000,000,000,0.3) 0 0px 0px;
-   left: 50%;
-   top: 50%;
-   margin-top: -25px;
-   margin-left: -113px;
-}
-
-.ribbon h1 {
-   font-size: 30px;
-   color: #000100;
-   margin: 0px;
-   padding: 15px 10px;
-   letter-spacing: -2px;
-}
-
-.ribbon:before, .ribbon:after {
-   content: '';
-   position: absolute;
-   display: block;
-   bottom: -1em;
-   border: 1.5em solid #ce2c20;
-   z-index: -1;
-}
-
-.ribbon:before {
-   left: -2em;
-   border-right-width: 1.5em;
-   border-left-color: transparent;
-   -webkit-box-shadow: rgba(000,000,000,0.4) 0px 0px 0px;
-   -moz-box-shadow: rgba(000,000,000,0.4) 0px 0px 0px;
-   box-shadow: rgba(000,000,000,0.4) 0px 0px 0px;
-}
-
-.ribbon:after {
-   right: -2em;
-   border-left-width: 1.5em;
-   border-right-color: transparent;
-   -webkit-box-shadow: rgba(000,000,000,0.4) -0px 0px 0px;
-   -moz-box-shadow: rgba(000,000,000,0.4) -0px 0px 0px;
-   box-shadow: rgba(000,000,000,0.4) -0px 0px 0px;
-}
-
-.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
-   border-color: #a7251c transparent transparent transparent;
-   position: absolute;
-   display: block;
-   border-style: solid;
-   bottom: -1em;
-   content: '';
-}
-
-.ribbon .ribbon-content:before {
-   left: 0;
-   border-width: 1em 0 0 1em;
-}
-
-.ribbon .ribbon-content:after {
-   right: 0;
-   border-width: 1em 1em 0 0;
 }
 
 /* box zoomIn */
@@ -250,7 +179,7 @@ body {
     border-radius: 100%;
     display: block;
     margin-right: -200px;
-    margin-bottom: -190px;
+    margin-bottom: -195px;
     width: 400px;
     height: 400px;
     overflow: hidden;
@@ -381,7 +310,7 @@ body {
 .box.square .number,
 .box.fullHeight .number,
 .box.minimized .number {
-    opacity: 0.37;
+    opacity: 0;
 }
 
 .box .number {
@@ -390,27 +319,20 @@ body {
     width: 400px;
     height: 400px;
     font-size: 160px;
-    line-height: 400px;
+    line-height: 393px;
     text-align: center;
+    letter-spacing: -50px;
+    text-indent: -37px;
     position: absolute;
     top: 0;
     left: 0;
     margin: 0 0 0 -7px;
     color: #f2f2f2;
+    opacity: 0.73;
 }
 
 .box .number h1 {
     margin: 0;
-}
-
-.box .number span {
-    position: relative;
-    width: 50%;
-    margin: 0 0 0 -50px;
-}
-
-.box .number span:first-child {
-    margin-left: 7px;
 }
 
 /* number hover */
@@ -424,7 +346,7 @@ body {
 .box ul {
     padding: 0;
     position: absolute;
-    width: 100%;
+    width: 400px;
     top: 20px;
     left: 0;
     opacity: 0;
@@ -483,6 +405,10 @@ body {
 
 /* reveal navigation */
 
+.box.minimized ul {
+    opacity: 0;
+}
+
 .box:hover ul {
     opacity: 1;
     -webkit-transform: translateY(85px);
@@ -495,6 +421,21 @@ body {
     -o-transition-delay: 600ms;
     -ms-transition-delay: 600ms;
     transition-delay: 600ms;
+}
+
+.box.fullHeight:hover ul,
+.box.minimized:hover ul {
+    opacity: 1;
+    -webkit-transform: translateY(85px);
+    -moz-transform: translateY(85px);
+    -o-transform: translateY(85px);
+    -ms-transform: translateY(85px);
+    transform: translateY(85px);
+    -webkit-transition-delay: 900ms;
+    -moz-transition-delay: 900ms;
+    -o-transition-delay: 900ms;
+    -ms-transition-delay: 900ms;
+    transition-delay: 900ms;
 }
 
 /* links and buttons */
@@ -553,7 +494,7 @@ footer a:hover {
     bottom: 0;
     left: 0;
     list-style-type: none;
-    width: 73px;
+    width: 100%;
     height: 100%;
 }
 
@@ -619,19 +560,28 @@ footer a:hover {
 
 /* about */
 
-.about {
-    position: fixed;
-    z-index: 50;
-    height: 100%;
+#about {
+    position: absolute;
+    z-index: 7;
     top: 100%;
     right: 89px;
-    padding: 40px;
+    bottom: 0;
     left: 0;
-    overflow: auto;
-    color: #000100;
+    overflow: hidden;
+    cursor: s-resize;
 }
 
-.about.active {
+#about {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+}
+
+#about.grabbing {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+}
+
+#about.active {
     top: 0;
 }
 
@@ -640,21 +590,43 @@ footer a:hover {
     float: left;
 }
 
-.about .c1 {width: 40%;}
-.about .c2 {width: 60%;}
+.about .c1 {
+    width: 40%;
+}
+
+.about .c2 {
+    width: 60%;
+}
+
+.about .padding {
+    display: inline-block;
+}
+
+.about .c1 .padding {
+    padding: 60px;
+}
+
+.about .c2 .padding {
+    padding: 125px 60px 60px 60px;
+}
 
 .about h2 {
     float: left;
+    clear: both;
     font-size: 17px;
     line-height: 17px;
     font-weight: bold;
-    margin: 0 0 20px 0;
+    margin: 20px 0;
     padding: 3px 5px 2px 4px;
     text-align: left;
     border: 3px solid #000100;
     text-transform: uppercase;
     text-shadow: 0px 1px 0px #f2f2f2;
     filter: dropshadow(color=#f2f2f2, offx=0, offy=1);
+}
+
+.about h2.name {
+    margin-top: 0;
 }
 
 .about h3 {
@@ -670,29 +642,14 @@ footer a:hover {
     filter: dropshadow(color=#f2f2f2, offx=0, offy=1);
 }
 
-.about ul {
-    float: left;
-    width: 100%;
-    margin: 0 0 20px 0;
-    padding: 0 0 0 20px;
-    text-align: left;
-}
-
-.about ul li {
-    font-size: 17px;
-    line-height: 23px;
-    text-shadow: 0px 1px 0px #f2f2f2;
-    filter: dropshadow(color=#f2f2f2, offx=0, offy=1);
-}
-
 .about p {
     float: left;
     font-size: 17px;
-    line-height: 23px;
+    line-height: 25px;
     width: 100%;
     clear: both;
-    margin: 0;
-    padding: 0 0 20px 0;
+    margin: 10px 0 0 0;
+    padding: 0;
     text-align: left;
     overflow: hidden;
     text-shadow: 0px 1px 0px #f2f2f2;
@@ -713,6 +670,50 @@ footer a:hover {
 
 .about a:hover {
     border-bottom: 2px solid #e32f21;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+#scroller > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+#scroller > ul > li ul {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#scroller > ul > li ul li {
+    font-size: 17px;
+    line-height: 25px;
+    text-shadow: 0px 1px 0px #f2f2f2;
+    filter: dropshadow(color=#f2f2f2, offx=0, offy=1);
 }
 
 /* x */

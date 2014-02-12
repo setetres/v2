@@ -1,17 +1,6 @@
 /* 15 columns */
 
 @media (min-width: 1380px) {
-    .about {
-        padding: 0 80px;
-    }
-    .about .c1 {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-    .about .c2 {
-        padding-top: 145px;
-        padding-bottom: 80px;
-    }
     .box {
         -webkit-transform: scale(1.2);
         -moz-transform: scale(1.2);
@@ -31,17 +20,6 @@
 /* 12 columns */
 
 @media all and (max-width: 1379px) {
-    .about {
-        padding: 0 60px;
-    }
-    .about .c1 {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .about .c2 {
-        padding-top: 125px;
-        padding-bottom: 60px;
-    }
     .box {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
@@ -61,16 +39,11 @@
 /* 9 columns */
 
 @media (max-width: 999px) {
-    .about {
-        padding: 0 40px;
+    .about .c1 .padding {
+        padding: 40px;
     }
-    .about .c1 {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .about .c2 {
-        padding-top: 105px;
-        padding-bottom: 40px;
+    .about .c2 .padding {
+        padding: 105px 40px 40px 40px;
     }
     .box {
         -webkit-transform: scale(0.8);
@@ -91,20 +64,15 @@
 /* 6 columns */
 
 @media (max-width: 769px) {
-    .about {
-        padding: 0 20px;
-    }
     .about .c1,
     .about .c2 {
         width: 100%;
     }
-    .about .c1 {
-        padding-top: 20px;
+    .about .c1 .padding {
         padding-bottom: 0;
     }
-    .about .c2 {
+    .about .c2 .padding {
         padding-top: 0;
-        padding-bottom: 20px;
     }
     .about h3 {
         margin-top: 20px;

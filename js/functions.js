@@ -1,4 +1,20 @@
+document.addEventListener('touchmove', function(e){e.preventDefault();}, false);
+
 $(document).ready(function(){
+
+    var myScroll;
+
+    function loaded() {
+        myScroll = new IScroll('#about', {mouseWheel: true});
+    }
+
+    // count to 73
+
+    function count(options) {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+    }
 
     // taget blank
 
@@ -11,6 +27,7 @@ $(document).ready(function(){
         setTimeout(function(){
             $('.loading').fadeOut(600);
             $('#box').removeClass('zoomIn');
+            $('.timer').each(count);
         },1000);
     });
 
@@ -29,9 +46,18 @@ $(document).ready(function(){
     // menu
 
     $('.box ul li:first-child').addClass('active');
+
     $('.box ul li a').hover(function(){
         $(this).parents('li').addClass('active');
         $(this).parents('li').siblings().removeClass('active');
+    });
+
+    $("#about").mouseover(function(){
+        $(this).removeClass('grab');
+    }).mousedown(function(){
+        $(this).addClass('grabbing');
+    }).mouseup(function(){
+        $(this).removeClass('grabbing');
     });
 
     // route: about
@@ -47,6 +73,9 @@ $(document).ready(function(){
             $('#box').addClass('minimized');
             setTimeout(function(){
                 $('#about').addClass('active');
+                setTimeout(function(){
+                    loaded();
+                },600);
             },900);
         },600);
     });
