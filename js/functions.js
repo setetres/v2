@@ -52,6 +52,11 @@ $(document).ready(function(){
         $(this).parents('li').siblings().removeClass('active');
     });
 
+    $('.box ul').mouseleave(function(){
+        $('.box ul li').removeClass('active');
+        $('.box ul li:first-child').addClass('active');
+    })
+
     $("#about").mouseover(function(){
         $(this).removeClass('grab');
     }).mousedown(function(){
@@ -70,8 +75,8 @@ $(document).ready(function(){
         $('#social').addClass('active');
         setTimeout(function(){
             $('#box').addClass('fullHeight');
-            $('#box').addClass('minimized');
             setTimeout(function(){
+                $('#box').addClass('minimized');
                 $('#about').addClass('active');
                 setTimeout(function(){
                     loaded();
