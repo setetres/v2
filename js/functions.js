@@ -81,7 +81,7 @@ $(document).ready(function(){
                 setTimeout(function(){
                     loaded();
                 },600);
-            },900);
+            },600);
         },600);
     });
 
@@ -89,7 +89,7 @@ $(document).ready(function(){
 
     switch(location.hash){
         case '#!/about':
-            $("[href='#!/about']").trigger('click');
+            $('[href="#!/about"]').trigger('click');
         break;
     }
 
