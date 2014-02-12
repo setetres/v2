@@ -69,10 +69,10 @@
         width: 100%;
     }
     .about .c1 .padding {
-        padding-bottom: 0;
+        padding: 20px;
     }
     .about .c2 .padding {
-        padding-top: 0;
+        padding: 20px;
     }
     .about h3 {
         margin-top: 20px;
