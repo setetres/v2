@@ -45,17 +45,17 @@ $(document).ready(function(){
 
     // menu
 
-    $('.box ul li:first-child').addClass('active');
+    $('#mn-about').addClass('active');
 
     $('.box ul li a').hover(function(){
-        $(this).parents('li').addClass('active');
-        $(this).parents('li').siblings().removeClass('active');
+        $(this).parents('li').find('a').addClass('active');
+        $(this).parents('li').siblings().find('a').removeClass('active');
     });
 
     $('.box ul').mouseleave(function(){
-        $('.box ul li').removeClass('active');
-        $('.box ul li:first-child').addClass('active');
-    })
+        $('.box ul li a').removeClass('active');
+        $('#mn-about').addClass('active');
+    });
 
     $("#about").mouseover(function(){
         $(this).removeClass('grab');
@@ -69,10 +69,25 @@ $(document).ready(function(){
 
     $('.crop').fullscreenBackground();
 
-    $("[href='#!/about']").click(function(event){
+    $("#bt-home").click(function(event){
+        $('#box').removeClass('zoomIn');
+        $('#about, #social').removeClass('active');
+        setTimeout(function(){
+            $('#box').removeClass('minimized');
+            setTimeout(function(){
+                $('#box').removeClass('fullHeight');
+                setTimeout(function(){
+                    $('#box').removeClass('square');
+                },600);
+            },600);
+        },600);
+        return false;
+    });
+
+    $("#mn-about").click(function(event){
         $('#box').removeClass('zoomIn');
         $('#box').addClass('square');
-        $('#social').addClass('active');
+        $('#social, #mn-about').addClass('active');
         setTimeout(function(){
             $('#box').addClass('fullHeight');
             setTimeout(function(){
@@ -83,14 +98,7 @@ $(document).ready(function(){
                 },600);
             },600);
         },600);
+        return false;
     });
-
-    // trigger
-
-    switch(location.hash){
-        case '#!/about':
-            $('[href="#!/about"]').trigger('click');
-        break;
-    }
 
 });

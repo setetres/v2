@@ -161,10 +161,10 @@ footer a:hover
     -webkit-border-radius: 100%
     border-radius: 100%
     display: block
-    margin-right: -200px
-    margin-top: -195px
-    width: 400px
-    height: 400px
+    margin-right: -150px
+    margin-top: -145px
+    width: 300px
+    height: 300px
     overflow: hidden
     z-index: 73
     opacity: 0.73
@@ -205,15 +205,15 @@ footer a:hover
         right: 0
         margin-right: 74px
         width: 14px
-        -webkit-transition-delay: 900ms
-        -moz-transition-delay: 900ms
-        -o-transition-delay: 900ms
-        -ms-transition-delay: 900ms
-        transition-delay: 900ms
+        -webkit-transition-delay: 600ms
+        -moz-transition-delay: 600ms
+        -o-transition-delay: 600ms
+        -ms-transition-delay: 600ms
+        transition-delay: 600ms
         opacity: 0.95
 
         &:hover
-            width: 400px
+            width: 300px
 
     // shape
 
@@ -221,7 +221,7 @@ footer a:hover
         display: block
         width: 100%
         height: 100%
-        border: 25px solid #f2f2f2
+        border: 20px solid #f2f2f2
         -webkit-border-radius: 100%
         border-radius: 100%
         position: absolute
@@ -252,7 +252,7 @@ footer a:hover
         // shape hover
 
         & .shape
-            border: 200px solid #000100
+            border: 150px solid #000100
             -webkit-transform: rotateY(0)
             -moz-transform: rotateY(0)
             -o-transform: rotateY(0)
@@ -278,7 +278,7 @@ footer a:hover
         border-radius: 0
 
     &.square .shape
-        border: 200px solid #000100
+        border: 150px solid #000100
         -webkit-border-radius: 0
         border-radius: 0
         -webkit-transform: rotateY(0)
@@ -297,10 +297,10 @@ footer a:hover
     .number
         display: block
         float: left
-        width: 400px
-        height: 400px
-        font-size: 160px
-        line-height: 393px
+        width: 300px
+        height: 300px
+        font-size: 123px
+        line-height: 293px
         text-align: center
         letter-spacing: -50px
         text-indent: -37px
@@ -309,7 +309,7 @@ footer a:hover
         left: 0
         margin: 0 0 0 -7px
         color: #f2f2f2
-        opacity: 0.73
+        opacity: 0.95
 
         h1
             margin: 0
@@ -324,15 +324,15 @@ footer a:hover
     ul
         padding: 0
         position: absolute
-        width: 400px
-        top: 20px
+        width: 100%
+        top: 0
         left: 0
         opacity: 0
-        -webkit-transform: translateY(65px)
-        -moz-transform: translateY(65px)
-        -o-transform: translateY(65px)
-        -ms-transform: translateY(65px)
-        transform: translateY(65px)
+        -webkit-transform: translateY(25px)
+        -moz-transform: translateY(25px)
+        -o-transform: translateY(25px)
+        -ms-transform: translateY(25px)
+        transform: translateY(25px)
 
         li
             display: block
@@ -346,7 +346,7 @@ footer a:hover
                 color: #e32f21
                 text-decoration: none
                 text-transform: uppercase
-                font-size: 45px
+                font-size: 35px
                 line-height: 10px
                 letter-spacing: -7px
                 text-indent: -10px
@@ -362,18 +362,18 @@ footer a:hover
                     top: 0
                     opacity: 0
 
-            & a:hover,
-            &.active a
-                color: #f2f2f2
-                line-height: 30px
-                margin-top: 10px
-                padding-bottom: 10px
+                &:hover,
+                &.active
+                    color: #f2f2f2
+                    line-height: 30px
+                    margin-top: 10px
+                    padding-bottom: 10px
 
-            & a:hover span,
-            &.active a span
-                top: -10px
-                color: #f2f2f2
-                opacity: 1
+                &:hover span,
+                &.active span
+                    top: -10px
+                    color: #f2f2f2
+                    opacity: 1
 
     // reveal navigation
 
@@ -382,11 +382,11 @@ footer a:hover
 
     &:hover ul
         opacity: 1
-        -webkit-transform: translateY(85px)
-        -moz-transform: translateY(85px)
-        -o-transform: translateY(85px)
-        -ms-transform: translateY(85px)
-        transform: translateY(85px)
+        -webkit-transform: translateY(50px)
+        -moz-transform: translateY(50px)
+        -o-transform: translateY(50px)
+        -ms-transform: translateY(50px)
+        transform: translateY(50px)
         -webkit-transition-delay: 600ms
         -moz-transition-delay: 600ms
         -o-transition-delay: 600ms
@@ -396,16 +396,16 @@ footer a:hover
     &.fullHeight:hover ul,
     &.minimized:hover ul
         opacity: 1
-        -webkit-transform: translateY(85px)
-        -moz-transform: translateY(85px)
-        -o-transform: translateY(85px)
-        -ms-transform: translateY(85px)
-        transform: translateY(85px)
-        -webkit-transition-delay: 900ms
-        -moz-transition-delay: 900ms
-        -o-transition-delay: 900ms
-        -ms-transition-delay: 900ms
-        transition-delay: 900ms
+        -webkit-transform: translateY(25px)
+        -moz-transform: translateY(25px)
+        -o-transform: translateY(25px)
+        -ms-transform: translateY(25px)
+        transform: translateY(25px)
+        -webkit-transition-delay: 600ms
+        -moz-transition-delay: 600ms
+        -o-transition-delay: 600ms
+        -ms-transition-delay: 600ms
+        transition-delay: 600ms
 
 // social
 
@@ -442,10 +442,8 @@ footer a:hover
         height: 100%
 
         li
-            display: block
             width: 100%
             height: 10%
-            clear: both
             position: relative
             font-size: 30px
             background: #000100
@@ -589,6 +587,16 @@ footer a:hover
 
     a:hover
         border-bottom: 2px solid #e32f21
+
+    a#bt-home
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        text-indent: -999999px
+        z-index: 3
+        border-bottom: 0
 
 #scroller
     position: absolute
