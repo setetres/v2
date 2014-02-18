@@ -67,7 +67,7 @@ $(document).ready(function(){
 
     // route: about
 
-    $('.crop').fullscreenBackground();
+    $('.media-crop').fullscreenBackground();
 
     $("#bt-home").click(function(event){
         $('#box').removeClass('zoomIn');
