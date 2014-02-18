@@ -105,15 +105,21 @@ footer
     font-weight: normal
     font-style: normal
 
+// custom colors
+
+$dark: #000100
+$red: #e32f21
+$light: #f2f2f2
+
 // custom
 
 ::-moz-selection
-    background: #e32f21
-    color: #000100
+    background: $red
+    color: $dark
 
 ::selection
-    background: #e32f21
-    color: #000100
+    background: $red
+    color: $dark
 
 html
     -ms-touch-action: none
@@ -127,8 +133,8 @@ body
 body
     cursor: default
     position: relative
-    background: #f2f2f2
-    color: #000100
+    background: $light
+    color: $dark
     -webkit-text-size-adjust: 100%
     -ms-text-size-adjust: 100%
 
@@ -139,12 +145,12 @@ a
 
 .social a,
 footer a
-    color: #e32f21
+    color: $red
     text-decoration: none
 
 .social a:hover,
 footer a:hover
-    color: #f2f2f2
+    color: $light
 
 // main
 
@@ -226,7 +232,7 @@ footer a:hover
         display: block
         width: 100%
         height: 100%
-        border: 20px solid #f2f2f2
+        border: 20px solid $light
         -webkit-border-radius: 100%
         border-radius: 100%
         position: absolute
@@ -257,7 +263,7 @@ footer a:hover
         // shape hover
 
         & .shape
-            border: 150px solid #000100
+            border: 150px solid $dark
             -webkit-transform: rotateY(0)
             -moz-transform: rotateY(0)
             -o-transform: rotateY(0)
@@ -283,7 +289,7 @@ footer a:hover
         border-radius: 0
 
     &.square .shape
-        border: 150px solid #000100
+        border: 150px solid $dark
         -webkit-border-radius: 0
         border-radius: 0
         -webkit-transform: rotateY(0)
@@ -313,7 +319,7 @@ footer a:hover
         top: 0
         left: 0
         margin: 0 0 0 -7px
-        color: #f2f2f2
+        color: $light
         opacity: 0.95
 
         h1
@@ -348,7 +354,7 @@ footer a:hover
             a
                 float: left
                 width: 100%
-                color: #e32f21
+                color: $red
                 text-decoration: none
                 text-transform: uppercase
                 font-size: 35px
@@ -361,7 +367,7 @@ footer a:hover
                     line-height: 11px
                     letter-spacing: 0
                     text-transform: none
-                    color: #000100
+                    color: $dark
                     padding-bottom: 15px
                     position: relative
                     top: 0
@@ -369,7 +375,7 @@ footer a:hover
 
                 &:hover,
                 &.active
-                    color: #f2f2f2
+                    color: $light
                     line-height: 30px
                     margin-top: 10px
                     padding-bottom: 10px
@@ -377,7 +383,7 @@ footer a:hover
                 &:hover span,
                 &.active span
                     top: -10px
-                    color: #f2f2f2
+                    color: $light
                     opacity: 1
 
     // reveal navigation
@@ -451,7 +457,7 @@ footer a:hover
             height: 10%
             position: relative
             font-size: 30px
-            background: #000100
+            background: $dark
 
             a
                 position: absolute
@@ -459,15 +465,15 @@ footer a:hover
                 text-align: center
                 width: 100%
                 height: 100%
-                color: #f2f2f2
+                color: $light
 
                 i
                     font-style: normal
 
                 &:hover,
                 &:active
-                    background: #e32e21
-                    color: #000100
+                    background: $red
+                    color: $dark
                     z-index: 2
                     -webkit-transform: scale(1.4)
                     -moz-transform: scale(1.4)
@@ -482,7 +488,7 @@ footer a:hover
 
                 &:active
                     opacity: 0.5
-                    color: #f2f2f2
+                    color: $light
                     -webkit-transform: scale(2)
                     -moz-transform: scale(2)
                     -o-transform: scale(2)
@@ -491,8 +497,8 @@ footer a:hover
 
                 &:hover:after
                     content: attr(data-title)
-                    background: #000100
-                    color: #e32e21
+                    background: $dark
+                    color: $red
                     position: absolute
                     bottom: 0
                     right: 73px
@@ -547,10 +553,10 @@ footer a:hover
         margin: 20px 0
         padding: 3px 5px 2px 4px
         text-align: left
-        border: 3px solid #000100
+        border: 3px solid $dark
         text-transform: uppercase
-        text-shadow: 0px 1px 0px #f2f2f2
-        filter: dropshadow(color=#f2f2f2, offx=0, offy=1)
+        text-shadow: 0px 1px 0px $light
+        filter: dropshadow(color=$light, offx=0, offy=1)
 
         &.name
             margin-top: 0
@@ -564,8 +570,8 @@ footer a:hover
         text-align: left
         padding: 0
         margin-bottom: 5px
-        text-shadow: 0px 1px 0px #f2f2f2
-        filter: dropshadow(color=#f2f2f2, offx=0, offy=1)
+        text-shadow: 0px 1px 0px $light
+        filter: dropshadow(color=$light, offx=0, offy=1)
 
     p
         float: left
@@ -577,21 +583,21 @@ footer a:hover
         padding: 0
         text-align: left
         overflow: hidden
-        text-shadow: 0px 1px 0px #f2f2f2
-        filter: dropshadow(color=#f2f2f2, offx=0, offy=1)
+        text-shadow: 0px 1px 0px $light
+        filter: dropshadow(color=$light, offx=0, offy=1)
 
         sup
             text-transform: uppercase
 
     a
-        color: #000100
+        color: $dark
         padding: 0
-        border-bottom: 2px solid #000100
+        border-bottom: 2px solid $dark
         text-decoration: none
         font-weight: bold
 
     a:hover
-        border-bottom: 2px solid #e32f21
+        border-bottom: 2px solid $red
 
     a#bt-home
         position: absolute
@@ -640,8 +646,8 @@ footer a:hover
             li
                 font-size: 17px
                 line-height: 25px
-                text-shadow: 0px 1px 0px #f2f2f2
-                filter: dropshadow(color=#f2f2f2, offx=0, offy=1)
+                text-shadow: 0px 1px 0px $light
+                filter: dropshadow(color=$light, offx=0, offy=1)
 
 // x
 
@@ -662,8 +668,8 @@ footer a:hover
         position: absolute
         width: 22px
         text-align: center
-        text-shadow: 0px 1px 0px #f2f2f2
-        filter: dropshadow(color=#f2f2f2, offx=0, offy=1)
+        text-shadow: 0px 1px 0px $light
+        filter: dropshadow(color=$light, offx=0, offy=1)
 
     .x-s
         margin-top: -10px
@@ -691,7 +697,7 @@ footer a:hover
         height: 3px
         top: 37px
         left: -13px
-        background: #000100
+        background: $dark
 
     .l-1
         -moz-transform: rotate(45deg)
@@ -709,13 +715,13 @@ footer a:hover
 
     &:hover .l-1,
     &:hover .l-2
-        background: #e32f21
+        background: $red
 
 
 // footer
 
 footer
-    background: #000100
+    background: $dark
     position: fixed
     z-index: 3
     left: 0
@@ -725,8 +731,8 @@ footer
     padding: 0 7px
     width: 100%
     text-align: left
-    color: #f2f2f2
-    text-shadow: 0px 1px 0px #000100
+    color: $light
+    text-shadow: 0px 1px 0px $dark
     -webkit-transition-duration: 300ms
     -moz-transition-duration: 300ms
     -o-transition-duration: 300ms
@@ -743,7 +749,7 @@ footer
     height: 100%
     margin: 0
     padding: 0
-    background: #f2f2f2 url(../img/loading.gif) center center no-repeat
+    background: $light url(../img/loading.gif) center center no-repeat
     overflow: hidden
 
     .crop
