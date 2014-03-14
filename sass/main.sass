@@ -113,14 +113,6 @@ $light: #f2f2f2
 
 // custom
 
-::-moz-selection
-    background: $red
-    color: $dark
-
-::selection
-    background: $red
-    color: $dark
-
 html
     -ms-touch-action: none
 
@@ -206,11 +198,11 @@ footer a:hover
         margin-top: 0
         top: 0
         height: 100%
-        -webkit-transition-delay: 0
-        -moz-transition-delay: 0
-        -o-transition-delay: 0
-        -ms-transition-delay: 0
-        transition-delay: 0
+        -webkit-transition-delay: 0ms
+        -moz-transition-delay: 0ms
+        -o-transition-delay: 0ms
+        -ms-transition-delay: 0ms
+        transition-delay: 0ms
 
     &.minimized
         right: 0
@@ -285,7 +277,7 @@ footer a:hover
     &.square,
     &.square.fullHeight,
     &.square.minimized
-        webkit-border-radius: 0
+        -webkit-border-radius: 0
         border-radius: 0
 
     &.square .shape
@@ -556,7 +548,6 @@ footer a:hover
         border: 3px solid $dark
         text-transform: uppercase
         text-shadow: 0px 1px 0px $light
-        filter: dropshadow(color=$light, offx=0, offy=1)
 
         &.name
             margin-top: 0
@@ -571,7 +562,6 @@ footer a:hover
         padding: 0
         margin-bottom: 5px
         text-shadow: 0px 1px 0px $light
-        filter: dropshadow(color=$light, offx=0, offy=1)
 
     p
         float: left
@@ -584,7 +574,6 @@ footer a:hover
         text-align: left
         overflow: hidden
         text-shadow: 0px 1px 0px $light
-        filter: dropshadow(color=$light, offx=0, offy=1)
 
         sup
             text-transform: uppercase
@@ -647,7 +636,6 @@ footer a:hover
                 font-size: 17px
                 line-height: 25px
                 text-shadow: 0px 1px 0px $light
-                filter: dropshadow(color=$light, offx=0, offy=1)
 
 // x
 
@@ -669,7 +657,6 @@ footer a:hover
         width: 22px
         text-align: center
         text-shadow: 0px 1px 0px $light
-        filter: dropshadow(color=$light, offx=0, offy=1)
 
     .x-s
         margin-top: -10px
