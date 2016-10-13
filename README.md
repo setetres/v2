@@ -1,7 +1,7 @@
 v2
 ==
 
-v2.0 of my website. [http://v5.setetres.st]
+v2.0 of my website. [http://v2.setetres.st]
 
 ![v2](http://files.setetres.st/img/v2-desktop.png?v=1&raw=true)
 
