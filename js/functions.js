@@ -16,7 +16,7 @@ $(document).ready(function(){
         $this.countTo(options);
     }
 
-    // taget blank
+    // target blank
 
     $('a[rel=external]').attr('target', '_blank');
 
